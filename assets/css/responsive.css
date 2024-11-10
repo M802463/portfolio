@@ -32,7 +32,7 @@
     }
 
     nav ul li:hover>a {
-        border-radius: 3.4vw;
+        border-radius: 50%;
     }
 
     .main_cursor,
