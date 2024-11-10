@@ -91,6 +91,7 @@
         width: 55px;
         height: 55px;
     }
+
     .profile_name a {
         border-radius: 50px;
         padding-left: 22px;
@@ -98,10 +99,28 @@
         height: 45px;
         margin-top: 2.5vw;
     }
+
     .profile_name a i {
         padding: 14px;
     }
+
     .profile_name a div {
         gap: 1.6vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profile_name h2 {
+        font-size: 27px;
+    }
+
+    .profile_name p {
+        font-size: 14px;
+    }
+
+    .profile_name a {
+        font-size: 12px;
+        height: 43px;
+        margin-bottom: 17%;
     }
 }
