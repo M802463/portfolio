@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background-color: light-dark(#000, #fff); */
+    background-color: #000;
+    cursor: none;
+}
+
+::selection {
+    color: #fff;
+    background-color: #ffb400;
+}
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    background-color: #ffb3002c;
+    border: 1px solid #ffb3002c;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.main_cursor {
+    width: 8px;
+    height: 8px;
+    background-color: #ffb400;
+    border: 1px solid #ffb400;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9;
+}
+
+nav {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul {
+    display: inline-flex;
+    gap: 1.3vw;
+    flex-direction: column;
+}
+
+nav ul li {}
+
+nav ul li a {
+    width: 2.9vw;
+    height: 2.9vw;
+    display: inline-flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #fff;
+    margin: 0%;
+    line-height: 140%;
+    /* text-align: center; */
+    text-transform: uppercase;
+    position: relative;
+    background-color: #2B2A2E;
+    border-radius: 3.4vw;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li:hover>a {
+    border-radius: 0px 3.4vw 3.4vw 0px;
+    background-color: #ffb400;
+}
+.active a {
+    background-color: #ffb400;
+}
+
+nav ul li a span {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 27%;
+    opacity: 0;
+    visibility: hidden;
+    height: 2.9vw;
+    display: flex;
+    padding: 0 0.5vw;
+    border-radius: 3.4vw 0px 0px 3.4vw;
+    background-color: #ffb400;
+    z-index: -1;
+    padding-left: 1.5vw;
+    transition: all .4s ease-in-out;
+    align-items: center;
+}
+
+nav ul li:hover>a span {
+    right: 98%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(69deg, #ffb400 26%, #111111 18%);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1.9fr;
+    position: relative;
+}
+
+.dark_light {
+    position: absolute;
+    color: #fff;
+    right: 3%;
+    top: 7%;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.dark_light i {
+    font-size: 1.5vw;
+    background-color: #454545;
+    width: 3.2vw;
+    height: 3.2vw;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.col_sm8 {}
+
+.col_sm88 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_img {
+    background-color: #030303;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1px #000;
+}
+
+.profile_name {
+    width: 65%;
+}
+
+.profile_name h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 140%;
+    margin: 0%;
+    position: relative;
+}
+
+.profile_name h2 span {
+    color: #ffb400;
+    padding-left: 4vw;
+    position: relative;
+}
+
+.profile_name h2 div {
+    padding-left: 4vw;
+}
+
+.profile_name h2 span::before {
+    content: "";
+    position: absolute;
+    width: 2vw;
+    height: 3px;
+    background-color: #ffb400;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    border-radius: 10px;
+}
+
+.profile_name p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1vw;
+    color: #fff;
+    font-weight: 500;
+    line-height: 170%;
+    margin: 2% 0 0;
+}
+
+.profile_name a {
+    display: inline-block;
+    border: 1px solid #ffb400;
+    border-radius: 3.1vw;
+    padding-left: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    height: 3.2vw;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1.8vw;
+}
+
+.profile_name a div {
+    gap: .9vw;
+    z-index: 9;
+    display: inline-flex;
+    align-items: center;
+}
+
+.profile_name a span {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #ffb400;
+    right: 0;
+    transition: all .4s ease-in-out;
+    z-index: 3;
+}
+
+.profile_name a:hover span {
+    width: 100%;
+}
+
+.profile_name a i {
+    background-color: #ffb400;
+    padding: 1vw;
+    border-radius: 50%;
+}

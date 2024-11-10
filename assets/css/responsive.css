@@ -1,0 +1,107 @@
+@media only screen and (max-width: 991px) {
+    body {
+        cursor: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: inherit;
+        transform: none;
+        background-color: #2b2a2a;
+        padding: 1.3% 0;
+    }
+
+    nav ul li a {
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+        background-color: #111111;
+        border-radius: 50%;
+    }
+
+    nav ul li a span {
+        display: none;
+    }
+
+    nav ul li:hover>a {
+        border-radius: 3.4vw;
+    }
+
+    .main_cursor,
+    .cursor {
+        display: none;
+    }
+
+    #main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background: linear-gradient(69deg, #111111 26%, #111111 18%);
+        gap: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .profile_img {
+        width: 270px;
+        height: 270px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 4px solid #252525;
+        box-shadow: none;
+    }
+
+    .profile_name h2 {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .profile_name p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .profile_name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .col_sm88 {
+        align-items: self-start;
+    }
+
+    .dark_light {
+        right: 8%;
+    }
+
+    .dark_light i {
+        font-size: 24px;
+        width: 55px;
+        height: 55px;
+    }
+    .profile_name a {
+        border-radius: 50px;
+        padding-left: 30px;
+        font-size: 16px;
+        height: 55px;
+        margin-top: 3.6vw;
+    }
+    .profile_name a i {
+        padding: 18px;
+    }
+    .profile_name a div {
+        gap: 2.6vw;
+    }
+}
